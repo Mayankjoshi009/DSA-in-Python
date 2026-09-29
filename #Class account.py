@@ -24,6 +24,8 @@ class Account:
 
     def __str__(self):
         return f"Account Number: {self.account_number}, Account Holder: {self.account_holder}, Balance: {self.balance}"
+    
+    
 Account1=Account(account_number="123456", account_holder="Mayank Joshi", balance=1000)
 Account1.deposit(500) 
 Account1.withdraw(200)
