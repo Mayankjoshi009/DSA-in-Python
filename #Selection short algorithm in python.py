@@ -9,5 +9,6 @@ def selection_sort(num):
                 mini_index = j
         num[i], num[mini_index] = num[mini_index], num[i]
         
+        
 print("Before sorting:", num)
 print("After sorting:", selection_sort(num))                   
