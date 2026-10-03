@@ -1,13 +1,32 @@
 #Selection short algorithm in python
 num=[5, 10, 15, 20,3,5,6,7,100,8,99,44,33,212,33,55,22,11,9,8,7,6,5,4,3,2,1]
+
+#Ascending Order
+
+# def selection_sort(num):
+#     n = len(num) 
+#     for i in range(0,n):
+#         mini_index = i
+#         for j in range(i+1,n):
+#             if num[j] < num[mini_index]:
+#                 mini_index = j
+#         num[i], num[mini_index] = num[mini_index], num[i]
+#     return num
+
+# print("Before sorting:", num)
+# print("After sorting:", selection_sort(num))                   
+
+# Decending Order
+
 def selection_sort(num):
     n = len(num) 
     for i in range(0,n):
         mini_index = i
         for j in range(i+1,n):
-            if num[j] < num[mini_index]:
+            if num[j] > num[mini_index]:
                 mini_index = j
         num[i], num[mini_index] = num[mini_index], num[i]
+    return num
         
         
 print("Before sorting:", num)
