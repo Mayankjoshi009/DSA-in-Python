@@ -14,7 +14,7 @@ num=[5, 10, 15, 20,3,5,6,7,100,8,99,44,33,212,33,55,22,11,9,8,7,6,5,4,3,2,1]
 #     return num
 
 # print("Before sorting:", num)
-# print("After sorting:", selection_sort(num))                   
+# print("After sorting in ascending order:", selection_sort(num))                   
 
 # Decending Order
 
@@ -30,4 +30,4 @@ def selection_sort(num):
         
         
 print("Before sorting:", num)
-print("After sorting:", selection_sort(num))                   
+print("After sorting in descending order:", selection_sort(num))                   
