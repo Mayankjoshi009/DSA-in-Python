@@ -31,3 +31,6 @@ def selection_sort(num):
         
 print("Before sorting:", num)
 print("After sorting in descending order:", selection_sort(num))                   
+
+# Time Complexity: O(n^2) in the worst case
+# Space Complexity: O(1) as it is an in-place sorting algorithm

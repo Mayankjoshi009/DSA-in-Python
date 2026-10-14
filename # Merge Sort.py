@@ -84,3 +84,6 @@ def merge_array_desc(left, right):
 
 merged_array_desc = merge_sort_desc(num)
 print("Descending order:", merged_array_desc)   
+
+# Time Complexity: O(n log n) in the worst case
+# Space Complexity: O(n) due to the temporary arrays used for merging

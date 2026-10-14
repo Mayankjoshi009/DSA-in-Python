@@ -56,3 +56,7 @@ def quick_sort_desc(nums, low, high):
 print("Sorted array in descending order:")
 quick_sort_desc(num_desc, 0, len(num_desc) - 1)
 print(num_desc)
+
+
+# Time Complexity: O(n log n) on average, O(n^2) in the worst case
+# Space Complexity: O(log n) due to recursive stack space

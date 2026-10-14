@@ -21,3 +21,6 @@ for i in range(n-2,-1,-1):
             num[j], num[j+1] = num[j+1], num[j]
 
 print("After sorting in descending order:", num)
+
+# Time Complexity: O(n^2) in the worst case
+# Space Complexity: O(1) as it is an in-place sorting algorithm
