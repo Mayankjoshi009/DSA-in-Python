@@ -6,4 +6,13 @@ largest = nums[0]
 n = len(nums)
 for i in range(0,n):
     largest = max(largest,nums[i])
-print("Largest number is :", largest)
+print("Largest number is:", largest)
+
+#Method2 
+
+largest = nums[0]
+n = len(nums)
+for i in range(0,n):
+    if nums[i]>largest:
+        largest = nums[i]
+print("Largest number is:",largest)        
