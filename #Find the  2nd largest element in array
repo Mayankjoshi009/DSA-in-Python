@@ -1,0 +1,4 @@
+#Find the  2nd largest element in array.
+
+nums=[55,32,5,6,78,88,767,665,444,-90,-89,-456]
+largest = float("-inf")
