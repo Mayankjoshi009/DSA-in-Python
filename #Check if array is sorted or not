@@ -1,0 +1,14 @@
+#Check if array is sorted or not.
+
+nums=[4,5,7,8,9,10,12,13,15]
+
+n= len(nums)
+for i in range(n-1):
+    if nums[i] > nums[i+1]:
+        print("The array is not sorted.")
+        break
+else:
+    print("The array is sorted.")
+    
+#Time Complexity: O(n)
+#Space Complexity: O(1)    
