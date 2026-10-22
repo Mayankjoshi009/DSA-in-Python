@@ -8,5 +8,7 @@ def is_sorted(nums):
     return True
 
 
+
+
 print(is_sorted(nums))
         
