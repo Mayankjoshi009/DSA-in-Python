@@ -23,6 +23,7 @@ print("1. After removing duplicates:", nums)
 #Optimum Solution
 
 print("Optimum Solution")
+
 num = [5, 10, 15, 20, 3, 5, 6, 7, 100, 8, 99, 44, 33, 212, 33, 55, 22, 11, 9, 8, 7, 6, 5, 4, 3, 2, 1]
 num.sort()
 def dup(num):
@@ -39,4 +40,5 @@ def dup(num):
     return i+1      
 
 d = dup(num)
-print("2. After removing duplicate",num[:d])
+del num[d:]
+print("2. After removing duplicate",num)
