@@ -42,3 +42,6 @@ def dup(num):
 d = dup(num)
 del num[d:]
 print("2. After removing duplicate",num)
+
+#TC=O(n)
+#SC=0(1)
