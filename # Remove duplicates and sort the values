@@ -14,3 +14,6 @@ for k in fre_map:
     j += 1
 del nums[j:]
 print("After removing duplicates:", nums)
+
+#TC=O(2n) == O(n)
+#SC =O(n)
