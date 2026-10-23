@@ -6,6 +6,5 @@ def is_sorted(nums):
         if nums[i] > nums[i + 1]:
             return False
     return True
-
 print(is_sorted(nums))
         
