@@ -6,5 +6,8 @@ rotations=k%n
 for _ in range(0,k):
     e = nums.pop()
     nums.insert(0,e) 
+    
+    
+    
 print("Right rotate array by K place:",nums)    
     
