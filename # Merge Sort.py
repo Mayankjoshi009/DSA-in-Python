@@ -80,7 +80,10 @@ def merge_array_desc(left, right):
         merged.append(right[j])
         j += 1
 
-    return merged   
+    return merged  
+
+
+
 
 merged_array_desc = merge_sort_desc(num)
 print("Descending order:", merged_array_desc)   
