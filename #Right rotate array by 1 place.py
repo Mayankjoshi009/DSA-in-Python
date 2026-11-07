@@ -1,5 +1,8 @@
 #Right rotate array by 1 place
 
+from pyparsing import nums
+
+
 num=[5, 10, 15, 20,3,5,6,7,100,8,99,44,33,212,33,55,22,11,9,8,7,6,5,4,3,2,1]
 
 n = len(num)
@@ -11,3 +14,13 @@ print("Right rotate array by 1 place is:",num)
 
 #TC=O(n-1)=O(n)
 #SC=O(i)
+
+
+k = int(input("Enter the number of places to right rotate the array:")) 
+n=len(num)
+k = k % n
+num[:]=num[n-k:]+num[:n-k]
+print("Right rotate array by k place is:",num)
+     
+#TC=0(n-k)+O(k)=O(n)12
+
