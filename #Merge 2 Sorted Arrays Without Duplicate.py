@@ -26,7 +26,6 @@ def merge_sorted_arrays(nums1, nums2):
             merged.append(nums2[j])
         j += 1
     print("Merged Array Without Duplicates:", merged)
-  
     
 merge_sorted_arrays(nums1, nums2)
 
