@@ -25,9 +25,11 @@ def merge_sorted_arrays(nums1, nums2):
         if len(merged) == 0 or merged[-1] != nums2[j]:
             merged.append(nums2[j])
         j += 1
+        
     print("Merged Array Without Duplicates:", merged)
     
 merge_sorted_arrays(nums1, nums2)
+
 
 #TC = O(n + m) where n and m are the lengths of the two input arrays. This is because we are iterating through both arrays once to merge them.  
 #SC = O(n + m) in the worst case, where n and m are the lengths of the two input arrays. This is because we are creating a new array to store the merged result, which can have a maximum size of n + m if there are no duplicates. 
