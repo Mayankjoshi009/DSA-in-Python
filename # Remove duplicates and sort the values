@@ -18,8 +18,6 @@ print("1. After removing duplicates:", nums)
 #TC=O(2n) == O(n)
 #SC =O(n)
 
-
-
 #Optimum Solution
 
 print("Optimum Solution")
