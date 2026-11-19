@@ -4,7 +4,21 @@ for i in range(n):
     if i not in nums:
         print(i)
         
+
+# Optimal solution to find missing number in an array 
+n = len(nums)
+freq = {}
+for i in range(0,n+1):
+    freq[i] = 0 
+    
+for i in range(n):
+    freq[nums[i]] = 1 
+                       
+for k,v in freq.items():
+    if v == 0:
+        print(k)  
         
+                                     
 # All numbers missing from 1 to max (works with duplicates)        
 
 present = set(nums)
@@ -15,9 +29,3 @@ print(len(missing))
 
 
 
-n = len(nums)
-freq = {}
-for i in range(0,n+1):
-    freq[i] = 0 
-    
-              
