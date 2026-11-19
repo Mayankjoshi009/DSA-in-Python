@@ -30,6 +30,11 @@ for k,v in freq.items():
 print("Optimized Solution 3") 
 n = len(nums)
 sum_of_nums = sum(nums)
+
+n * (n + 1) // 2 - sum_of_nums
+print("Missing number:", n * (n + 1) // 2 - sum_of_nums)
+
+# TC=O(n) and SC=O(1)
         
                                      
 # All numbers missing from 1 to max (works with duplicates)        
