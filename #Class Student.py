@@ -53,7 +53,4 @@ student2 = Student(p, q, r, s, t, f)
 print("_____<<Student 2>>_____")
 student2.display_student_details()
 student2.display_student_marks()
-
-
-
 print("_____<<End of program>>_____")
