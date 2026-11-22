@@ -82,9 +82,6 @@ def merge_array_desc(left, right):
 
     return merged  
 
-
-
-
 merged_array_desc = merge_sort_desc(num)
 print("Descending order:", merged_array_desc)   
 
