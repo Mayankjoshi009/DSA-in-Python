@@ -29,8 +29,7 @@ class Student:
         print("--Math marks:", self.math, "out of 100--")
         print("--Student percentage:", round(self.percentage, 2),"%--")
         print("--Average marks:", round(self.average, 2),"--")
-
-
+        
 f = input("--<<Enter college name: ")
 a = input("--<<Enter student name: ")
 b = int(input("--<<Enter student age: "))
@@ -54,7 +53,4 @@ student2 = Student(p, q, r, s, t, f)
 print("_____<<Student 2>>_____")
 student2.display_student_details()
 student2.display_student_marks()
-
-
-
 print("_____<<End of program>>_____")
