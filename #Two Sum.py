@@ -10,4 +10,7 @@ def twoSum(nums, target):
                 return[i,j]
             
 print(twoSum(nums,20)) 
-                       
+                      
+                      
+#TC: O(n^2)
+#SC: O(1)
