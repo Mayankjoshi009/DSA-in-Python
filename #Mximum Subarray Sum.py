@@ -17,8 +17,20 @@ print(max_subarray_sum(nums))
 #SC: O(1)
 
 #Optimized solution
+print("Optimized solution")
+
 
 def max_subarray_sum_optimal(nums):
     max_sum = float('-inf')
     total = 0
-    
+    for i in range(len(nums)):
+        total = total + nums[i]
+        max_sum = max(max_sum, total)
+        if total < 0:
+            total = 0
+    return max_sum
+
+print(max_subarray_sum_optimal(nums))
+
+#TC: O(n)
+#SC: O(1)
