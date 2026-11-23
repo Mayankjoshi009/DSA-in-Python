@@ -16,3 +16,9 @@ print(max_subarray_sum(nums))
 #TC: O(n^2)
 #SC: O(1)
 
+#Optimized solution
+
+def max_subarray_sum_optimal(nums):
+    max_sum = float('-inf')
+    total = 0
+    
