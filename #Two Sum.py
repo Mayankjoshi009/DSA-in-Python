@@ -14,3 +14,21 @@ print(twoSum(nums,20))
                       
 #TC: O(n^2)
 #SC: O(1)
+
+
+#optimized solution
+
+def twoSumoptimal(nums, target):
+    num_dict = {}
+    n = len(nums)
+    for i in range(n):
+        remainder = target - nums[i]
+        if remainder in num_dict:
+            return [num_dict[remainder], i]
+        num_dict[nums[i]] = i
+    return []
+
+print(twoSumoptimal(nums,20))
+
+#TC: O(n)
+#SC: O(n)
