@@ -14,6 +14,9 @@ class Solution:
 sp = Solution()
 print(sp.rearrangeArray(nums))
 
+#TC: O(n+n/2) = O(n)
+#SC: O(n)
+
 #optimized solution
 print("Optimized solution")
 
@@ -32,3 +35,6 @@ class Solution:
 
 sp = Solution()
 print(sp.rearrangeArray(nums))
+
+#TC: O(n)
+#SC: O(n)
