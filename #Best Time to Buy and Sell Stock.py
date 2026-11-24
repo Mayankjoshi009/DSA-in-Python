@@ -13,4 +13,9 @@ for i in range(n):
 print("Maximum profit:", max_profit) 
 
 #TC: O(n^2)
-#SC: O(1)           
+#SC: O(1)
+
+#Optimized Solution
+print("Optimized Solution:")
+
+           
