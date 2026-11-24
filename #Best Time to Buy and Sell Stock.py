@@ -18,4 +18,15 @@ print("Maximum profit:", max_profit)
 #Optimized Solution
 print("Optimized Solution:")
 
+max_profit = 0
+min_price = float('inf')
+n = len(prices)
+for i in range(n):
+    min_price = min(min_price, prices[i])
+    max_profit = max(max_profit, prices[i] - min_price)
+
+print("Maximum profit:", max_profit)
+
+#TC: O(n)
+#SC: O(1)
            
