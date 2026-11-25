@@ -18,7 +18,9 @@ print("The longest consecutive sequence has a length of:", max_count)
 #SC: O(1) as we are using a constant amount of extra space.
 
 #Better Approach:
-print("\nBetter Approach")    
+print("Better Approach")    
+
+
 
 last_smallest = float('-inf')
 count = 0
