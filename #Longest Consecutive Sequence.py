@@ -39,3 +39,22 @@ print("The longest consecutive sequence has a length of:", longest)
 
 #TC: O(nlogn) due to sorting the input list.
 #SC: O(1) as we are using a constant amount of extra space.
+
+
+#Optimal Approac:
+
+nums = [100, 4, 200, 1,1,2, 3, 2, 5, 6, 7, 8, 9]
+
+num_set=set()
+for i in nums:
+    num_set.add(i)
+longest=0
+for num in num_set:
+    if num - 1 not in num_set:
+        x = num
+        count = 1
+        while x+1 in num_set:
+            count+=1
+            x+=1
+        longest= max(longest,count)    
+print("The longest consecutive sequence has a length",longest)            
