@@ -20,3 +20,6 @@ print("The longest consecutive sequence has a length of:", max_count)
 #Better Approach:
 print("\nBetter Approach")    
 
+last_smallest = float('-inf')
+count = 0
+longest = 0
