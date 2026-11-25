@@ -57,4 +57,7 @@ for num in num_set:
             count+=1
             x+=1
         longest= max(longest,count)    
-print("The longest consecutive sequence has a length",longest)            
+print("The longest consecutive sequence has a length",longest)
+
+#TC=O(3N)
+#SC=O(N)            
