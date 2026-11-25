@@ -23,3 +23,17 @@ print("\nBetter Approach")
 last_smallest = float('-inf')
 count = 0
 longest = 0
+nums.sort()
+for i in range(n):
+    num = nums[i]
+    if num-1 == last_smallest:
+        count += 1  
+        last_smallest = num
+    elif num != last_smallest:
+        count = 1
+        last_smallest = num
+    longest = max(longest, count)    
+print("The longest consecutive sequence has a length of:", longest)
+
+#TC: O(nlogn) due to sorting the input list.
+#SC: O(1) as we are using a constant amount of extra space.
