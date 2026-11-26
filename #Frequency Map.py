@@ -10,4 +10,5 @@ for n in list:
         freq_map[n] += 1
     else:
         freq_map[n] = 1
+        
 print("Frequency of each element:", freq_map)
