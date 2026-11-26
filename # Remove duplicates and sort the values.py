@@ -1,0 +1,45 @@
+# Remove duplicates and sort the values.
+nums = [5, 10, 15, 20, 3, 5, 6, 7, 100, 8, 99, 44, 33, 212, 33, 55, 22, 11, 9, 8, 7, 6, 5, 4, 3, 2, 1]
+print("Before Sorted:",nums)
+nums.sort()
+print("Sorted:", nums)
+
+fre_map = {}
+for x in nums:
+    fre_map[x] = 0
+
+j = 0
+for k in fre_map:
+    nums[j] = k
+    j += 1
+del nums[j:]
+print("1. After removing duplicates:", nums)
+
+#TC=O(2n) == O(n)
+#SC =O(n)
+
+#Optimum Solution
+
+print("Optimum Solution")
+
+num = [5, 10, 15, 20, 3, 5, 6, 7, 100, 8, 99, 44, 33, 212, 33, 55, 22, 11, 9, 8, 7, 6, 5, 4, 3, 2, 1]
+num.sort()
+def dup(num):
+    n = len(num)
+    if n == 1:
+        return 1
+    i = 0
+    j = i+1
+    while j < n :
+        if num[j]!=num[i]:
+            i+=1
+            num[i],num[j]=num[j],num[i]
+        j+=1 
+    return i+1      
+
+d = dup(num)
+del num[d:]
+print("2. After removing duplicate",num)
+
+#TC=O(n)
+#SC=0(1)
