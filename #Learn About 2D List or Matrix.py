@@ -58,13 +58,32 @@ for i in range(rows):
             print(nums[i][j], end="\t")
         else:
             print("*", end="\t")
-    print()     
- 
+    print() 
+diag = [nums[i][i] for i in range(rows)]
+print("Diagonal:", diag)         
+print("Sum:", sum(diag))
+
+          
 print("Anti-diagonal matrix:")
+
+
 for i in range(rows):
     for j in range(cols):
         if i + j == cols - 1:
             print(nums[i][j], end="\t")
         else:
             print("*", end="\t")
-    print()   
+    print()
+anti = [nums[i][cols - 1 - i] for i in range(rows)]
+print("Anti-diagonal:", anti)    
+print("Sum:", sum(anti))          
+
+    
+print("Both diagonals together:")      
+for i in range(rows):
+    for j in range(cols):
+        if i == j or i + j == cols - 1:
+            print(nums[i][j], end="\t")
+        else:
+            print("*", end="\t")
+    print()
