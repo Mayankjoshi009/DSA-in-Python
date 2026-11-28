@@ -6,7 +6,10 @@ nums=[[5,10,15],
 
 rows = len(nums)
 cols=len(nums[0])
-
+total = 0
 for i in range(0,rows):
       for j in range(0,cols):
-            print(nums[i][j])
+            print(nums[i][j],end=" ")
+            total +=nums[i][j]
+      print()
+print("Total of matrix is:",total)            
