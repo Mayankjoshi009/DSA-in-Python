@@ -87,3 +87,7 @@ for i in range(rows):
         else:
             print("*", end="\t")
     print()
+
+#Transpose of Matrix
+
+        
