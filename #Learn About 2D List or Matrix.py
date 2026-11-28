@@ -47,6 +47,24 @@ for i in range(rows):
             print("*", end="\t")
         lower_sum += nums[i][j]        
     print()
-print("Lower triangle sum:", lower_sum)       
+print("Lower triangle sum:", lower_sum)  
+
+#Diagonal element
+
+print("Main diagonal matrix:")
+for i in range(rows):
+    for j in range(cols):
+        if i == j:
+            print(nums[i][j], end="\t")
+        else:
+            print("*", end="\t")
+    print()     
  
-    
+print("Anti-diagonal matrix:")
+for i in range(rows):
+    for j in range(cols):
+        if i + j == cols - 1:
+            print(nums[i][j], end="\t")
+        else:
+            print("*", end="\t")
+    print()   
